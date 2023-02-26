@@ -1,0 +1,99 @@
+[class*="flexslider"] {
+display:block;
+}
+[class*="flexslider"] ul {
+	padding: 0 !important;
+
+}
+[class*="flexslider"] ul li {
+	position: relative;
+	padding: 0 !important;
+	list-style-type: none;
+	transition: all 300ms ease-out 0s;
+}
+[class*="flexslider"] ul li > img {
+	width: 100%;
+}
+[class*="flexslider"] ul li+li {
+	display: none;
+}
+[class*="flexslider"] ul.flex-direction-nav {
+	display:none;
+}
+[class*="flexslider"] ul.flex-direction-nav li {
+	position: absolute;
+	left: 0.5%;
+	top: 50%;
+}
+[class*="flexslider"] ul.flex-direction-nav li+li {
+	position: absolute;
+	left: auto;
+	right: 0.5%;
+	top: 50%;
+	display: block;
+	cursor: pointer;
+}
+[class*="flexslider"] ul.flex-direction-nav li a {
+	width: 39px;
+	height: 46px;
+	display: block;
+	font-size: 0;
+	margin-top: -25px;
+}
+[class*="flexslider"] ul.flex-direction-nav li a.flex-prev {
+	background: url(../images/prev.png) no-repeat 50% 50%;
+	background-size: 100%;
+}
+[class*="flexslider"] ul.flex-direction-nav li a.flex-next {
+	background: url(../images/next.png) no-repeat 50% 50%;
+	background-size: 100%;
+}
+.flexslider .flex-control-nav {
+	
+	list-style-type: none;
+	
+	
+	position: absolute;
+    left: 50%;
+    bottom: 2.5%;
+    transform: translate(-50%, -50%);
+    z-index: 8;
+}
+.flexslider .flex-control-nav li {
+	display: inline-block;
+	padding: 0 2px;
+}
+.flexslider .flex-control-nav li a {
+	width: 15px;
+	height: 15px;
+	border: 1px solid #fff;
+	background: transparent;
+	font-size: 0;
+	border-radius: 50px;
+	display: block;
+	cursor: pointer;
+}
+.flexslider .flex-control-nav li a:hover, .flexslider .flex-control-nav li a.flex-active {
+	background: #fff;
+}
+.arrow-box {
+	position: absolute;
+	z-index: 99;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%, 0);
+	width: 303px;
+	height: 56px;
+	background-size: cover;
+	background: url(../images/arrow-box.png) no-repeat 50% 100%;
+}
+.arrow-box a {
+	display: block;
+	width: 80%;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, 0);
+	background: url(../images/arrow.png) no-repeat 50% 50%;
+}
